@@ -7,7 +7,7 @@ public class PowerImpl extends Calculation implements Power {
     public Number powerOperation(Number number1, Number number2) {
         this.setNumber1(number1);
         this.setNumber2(number2);
-        Number res =Math.pow(number1.doubleValue(),number2.doubleValue());
+        Number res =Math.pow(number2.doubleValue(),number1.doubleValue());
         this.setResult(res);
         return this.getResult();
     }
